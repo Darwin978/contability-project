@@ -1,0 +1,71 @@
+
+.header {
+    background-color: #007bff;
+    color: white;
+    padding: 1rem;
+  }
+  
+.header h1 {
+    font-size: 2rem;
+  }
+  
+.main {
+    padding: 2rem;
+  }
+  
+.hero {
+    background-image: url('/hero-background.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+  }
+  
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+.features {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 2rem 0;
+  }
+  
+.features article {
+    flex-basis: calc(33.333% - 2rem);
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background-color: #f2f2f2;
+    border: 1px solid #ddd;
+  }
+  
+.pricing,
+.contact {
+    background-color: #f2f2f2;
+    padding: 1rem;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+.button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 0.5rem 2rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+  }
+  
+.footer {
+    background-color: #007bff;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+  }
