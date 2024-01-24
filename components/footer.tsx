@@ -9,25 +9,25 @@ export function Footer() {
         <p className={styles.text}>
           &copy; {new Date().getFullYear()} UCuenca. All rights reserved.
         </p>
-        <nav>
-          <ul className={styles.navList}>
-            <li className={styles.navItem}>
-              <Link href="/reports">
-                <h4 className={styles.navLink}>Home</h4>
-              </Link>
-            </li>
-            <li className={styles.navItem}>
-              <Link href="/biblioteca">
-                <h4 className={styles.navLink}>About</h4>
-              </Link>
-            </li>
-            <li className={styles.navItem}>
-              <Link href="/transactions">
-                <h4 className={styles.navLink}>Contact</h4>
-              </Link>
-            </li>
-          </ul>
-        </nav>
+        {/*<nav>*/}
+        {/*  <ul className={styles.navList}>*/}
+        {/*    <li className={styles.navItem}>*/}
+        {/*      <Link href="/reports">*/}
+        {/*        <h4 className={styles.navLink}>Home</h4>*/}
+        {/*      </Link>*/}
+        {/*    </li>*/}
+        {/*    <li className={styles.navItem}>*/}
+        {/*      <Link href="/biblioteca">*/}
+        {/*        <h4 className={styles.navLink}>About</h4>*/}
+        {/*      </Link>*/}
+        {/*    </li>*/}
+        {/*    <li className={styles.navItem}>*/}
+        {/*      <Link href="/transactions">*/}
+        {/*        <h4 className={styles.navLink}>Contact</h4>*/}
+        {/*      </Link>*/}
+        {/*    </li>*/}
+        {/*  </ul>*/}
+        {/*</nav>*/}
       </div>
     </footer>
     )
