@@ -8,6 +8,7 @@ import "primereact/resources/primereact.min.css";
 import "primeicons/primeicons.css";
 import "primeflex/primeflex.css";
 import {Button} from "primereact/button";
+import Link from "next/link";
 
 export default function Menu() {
     const itemRenderer = (item, options) => {
@@ -39,140 +40,106 @@ export default function Menu() {
         }
     };
 
-    const items: MenuItem[] = [
+
+    const itemsMenu = [
         {
             label: 'Normativa Vigente- S1',
-            data: 'root',
-            template: itemRenderer,
+            icon: 'pi pi-bars',
             items: [
                 [
                     {
-                        items: [
-                            {label: 'Leyes Tributarias LORTI', icon: 'pi pi-list', template: itemRenderer},
-                            {label: 'Código Tributario', icon: 'pi pi-users', template: itemRenderer},
-                            {label: 'Código de Trabajo', icon: 'pi pi-file', template: itemRenderer}
-                        ]
+                        label: 'S1',
+                        items: [{ label: 'Leyes Tributarias LORTI', command:()=>{window.open("https://drive.google.com/file/d/1xSz6f2eOyitjOdYDsg1FAtGDmYbm5gh5/view?usp=sharing", "_blank")} }, { label: 'Código Tributario' }, { label: 'Código de Trabajo' }]
                     }
-                ],
-            ]
+                ]
+                ]
         },
         {
             label: 'Normativa Contable - S2',
-            data: 'root',
-            template: itemRenderer,
+            icon: 'pi pi-box',
             items: [
                 [
                     {
-                        items: [
-                            {label: 'NIC', icon: 'pi pi-list', template: itemRenderer},
-                            {label: 'NIFF', icon: 'pi pi-users', template: itemRenderer}
-                        ]
+                        label: 'S2',
+                        items: [{ label: 'NIC', command:()=>{window.open("https://drive.google.com/file/d/14wrbazgQS_ZQUWT9zCyiMQH8KUnXy8s3/view?usp=sharing", "_blank")} }, { label: 'NIFF' }]
                     }
-                ],
+                ]
             ]
-
         },
         {
             label: 'Calculadoras - S3',
-            data: 'root',
-            template: itemRenderer,
+            icon: 'pi pi-calculator',
             items: [
                 [
                     {
-                        items: [
-                            {label: 'Calculadora Tributaria', icon: 'pi pi-list', template: itemRenderer},
-                            {label: 'Calculadora Laboral', icon: 'pi pi-users', template: itemRenderer},
-                            {label: 'Calculadora Contable', icon: 'pi pi-file', template: itemRenderer}
-                        ]
+                        label: 'S3',
+                        items: [{ label: 'Calculadora Tributaria' }, { label: 'Calculadora Laboral' }, { label: 'Calculadora Contable', url:'/S3/Calculadoras' }]
                     }
-                ],
+                ]
             ]
         },
         {
             label: 'Formularios - S4',
-            data: 'root',
-            template: itemRenderer,
+            icon: 'pi pi-briefcase',
             items: [
                 [
                     {
-                        items: [
-                            {label: 'SRI (IVA-IR)', icon: 'pi pi-list', template: itemRenderer}
-                        ]
+                        label: 'S4',
+                        items: [{ label: 'SRI (IVA-IR)', command:()=>{window.open("https://docs.google.com/spreadsheets/d/1Mw2mzOpKaSF7R_lii7RYoSk1g9BhCHBt/edit?usp=sharing&ouid=110999749554107028790&rtpof=true&sd=true", "_blank")} }]
                     }
-                ],
+                ]
             ]
         },
         {
             label: 'Proceso Contable - S5',
-            data: 'root',
-            template: itemRenderer,
+            icon: 'pi pi-book',
             items: [
                 [
                     {
-                        items: [
-                            {label: 'Libro diario', icon: 'pi pi-list', template: itemRenderer},
-                            {label: 'Mayorizacion', icon: 'pi pi-users', template: itemRenderer},
-                            {label: 'Balance', icon: 'pi pi-file', template: itemRenderer}
-                        ]
+                        label: 'S1',
+                        items: [{ label: 'Libro diario', command:()=>{window.open("https://docs.google.com/spreadsheets/d/13LIYbWFppjkyz6tvYtFIwwMdOTMJ1eIj/edit?usp=sharing&ouid=110999749554107028790&rtpof=true&sd=true", "_blank")} }, { label: 'Mayorizacion' }, { label: 'Balance' }]
                     }
-                ],
+                ]
             ]
         },
         {
             label: 'Inf. Financiera - S6',
-            data: 'root',
-            template: itemRenderer,
+            icon: 'pi pi-chart-bar',
             items: [
                 [
                     {
-                        items: [
-                            {label: 'ESF', icon: 'pi pi-list', template: itemRenderer},
-                            {label: 'E. Resultados', icon: 'pi pi-users', template: itemRenderer},
-                            {label: 'E. Flujos de Efectivo', icon: 'pi pi-file', template: itemRenderer},
-                            {label: 'E. Cambios en el patrimonio', icon: 'pi pi-file', template: itemRenderer}
-                        ]
+                        label: 'S1',
+                        items: [{ label: 'ESF' }, { label: 'E. Resultados', command:()=>{window.open("https://docs.google.com/spreadsheets/d/1_tQRN4iriROrvx84Qd4WVHbki3NlDcqW/edit?usp=sharing&ouid=110999749554107028790&rtpof=true&sd=true", "_blank")} }, { label: 'E. Flujos de Efectivo' }, {label: 'E. Cambios en el patrimonio'}]
                     }
-                ],
+                ]
             ]
         },
         {
-            label: 'Tareas - S7',
-            data: 'root',
-            template: itemRenderer,
+            label: 'Modulo Educativo',
+            icon: 'pi pi-copy',
             items: [
                 [
                     {
-                        items: [
-                            {label: 'Tareas de los estudiantes por su institucion', icon: 'pi pi-list', template: itemRenderer},
-                            {label: 'Tareas propuestas por SIFCON', icon: 'pi pi-users', template: itemRenderer},
-                        ]
+                        label: 'Tareas S7',
+                        items: [{ label: 'Tareas de los estudiantes por su institucion', url: "/S7/tareasU" }, { label: 'Tareas propuestas por SIFCON', url:"/S7/tareasS"}]
                     }
                 ],
-            ]
-        },
-        {
-            label: 'Evaluaciones - S8',
-            data: 'root',
-            template: itemRenderer,
-            items: [
                 [
                     {
-                        items: [
-                            {label: 'Pruebas', icon: 'pi pi-list', template: itemRenderer},
-                            {label: 'Lecciones', icon: 'pi pi-users', template: itemRenderer},
-                            {label: 'Mecanismos para reforzar', icon: 'pi pi-file', template: itemRenderer}
-                        ]
+                        label: 'Evaluaciones S8',
+                        items: [{ label: 'Pruebas' }, { label: 'Lecciones' }, { label: 'Mecanismos para reforzar' }]
                     }
-                ],
+                ]
             ]
         }
     ];
-
     const start = (
         <div>
+            <Link href="/">
             <Avatar
                 image="https://res.cloudinary.com/dqtu46lne/image/upload/v1706061073/proyect_contability/rjunpc2ge23nmxth55xo.png"
                 shape="circle" size="xlarge"/>
+            </Link>
         </div>
     );
     const end = <Avatar image="https://primefaces.org/cdn/primevue/images/avatar/amyelsner.png" shape="circle"/>;
@@ -180,8 +147,9 @@ export default function Menu() {
 
     return (
         <div className="card">
-            <MegaMenu model={items} orientation="horizontal" start={start} end={end} breakpoint="960px"
-                      className="p-3" style={{borderRadius: '0rem'}}/>
+            {/*<MegaMenu model={items} orientation="horizontal" start={start} end={end} breakpoint="960px"*/}
+            {/*          className="p-3" style={{borderRadius: '0rem'}}/>*/}
+            <MegaMenu start={start} model={itemsMenu} breakpoint="960px" />
         </div>
     )
 }

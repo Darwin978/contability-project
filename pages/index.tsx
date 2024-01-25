@@ -6,6 +6,7 @@ import {InputText} from "primereact/inputtext";
 import {Button} from "primereact/button";
 import {Password} from "primereact/password";
 import {router} from "next/client";
+import "bootstrap/dist/css/bootstrap.min.css"
 
 const cardStyle = {
     backgroundImage: 'url("https://res.cloudinary.com/dqtu46lne/image/upload/v1706056718/proyect_contability/tjkzb3dxanjji04v1xnz.webp")',
@@ -32,9 +33,7 @@ const overlayCardStyle = {
     boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
     backgroundColor: 'rgba(255, 255, 255, 0.8)', // Fondo semitransparente
 };
-function onClickButton(){
-    router.push('/privateHome')
-}
+
 const IndexPage = () => (
     <Layout title="SIFCON">
         <div>
@@ -58,8 +57,10 @@ const IndexPage = () => (
                                 <Password toggleMask  feedback={false} className="p-inputtext-sm" style={{width:"100%"}}></Password></div>
                         </div>
                     </div>
-                    <div className="row d-flex justify-content-center">
-                        <Button onClick={onClickButton}  label="INGRESAR" className=" col-4 p-button-sm p-button-secondary" ></Button>
+                    <div className="block text-center align-items-center  border-round mb-3 mt-2">
+                        <Link href="/privateHome">
+                        <Button   label="INGRESAR" className=" col-4 p-button-sm p-button-secondary" ></Button>
+                        </Link>
                     </div>
                 </Card>
             </Card>
