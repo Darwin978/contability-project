@@ -127,7 +127,7 @@ export default function Menu() {
                 [
                     {
                         label: 'Evaluaciones S8',
-                        items: [{ label: 'Pruebas' }, { label: 'Lecciones' }, { label: 'Mecanismos para reforzar' }]
+                        items: [{ label: 'Pruebas', command:()=>{window.open("https://docs.google.com/document/d/1q9BcIQ5-d5_LnkBbPwCV9yL9nx9yEg3U/edit?usp=sharing&ouid=110999749554107028790&rtpof=true&sd=true", "_blank")} }, { label: 'Lecciones' }, { label: 'Mecanismos para reforzar' }]
                     }
                 ]
             ]
