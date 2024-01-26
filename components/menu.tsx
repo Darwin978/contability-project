@@ -49,7 +49,7 @@ export default function Menu() {
                 [
                     {
                         label: 'S1',
-                        items: [{ label: 'Leyes y Normativas Actualizadas', command:()=>{window.open("https://drive.google.com/file/d/1xSz6f2eOyitjOdYDsg1FAtGDmYbm5gh5/view?usp=sharing", "_blank")} }]
+                        items: [{ label: 'Leyes y Normativas Actualizadas', command:()=>{window.open("https://drive.google.com/file/d/1FcyGQ-ZAFISvtySTJsu56IQhrsdJNNrL/view?usp=sharing", "_blank")} }]
                     }
                 ]
                 ]
