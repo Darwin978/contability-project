@@ -49,7 +49,7 @@ export default function Menu() {
                 [
                     {
                         label: 'S1',
-                        items: [{ label: 'Leyes Tributarias LORTI', command:()=>{window.open("https://drive.google.com/file/d/1xSz6f2eOyitjOdYDsg1FAtGDmYbm5gh5/view?usp=sharing", "_blank")} }, { label: 'Código Tributario' }, { label: 'Código de Trabajo' }]
+                        items: [{ label: 'Leyes y Normativas Actualizadas', command:()=>{window.open("https://drive.google.com/file/d/1xSz6f2eOyitjOdYDsg1FAtGDmYbm5gh5/view?usp=sharing", "_blank")} }]
                     }
                 ]
                 ]
@@ -61,7 +61,7 @@ export default function Menu() {
                 [
                     {
                         label: 'S2',
-                        items: [{ label: 'NIC', command:()=>{window.open("https://drive.google.com/file/d/14wrbazgQS_ZQUWT9zCyiMQH8KUnXy8s3/view?usp=sharing", "_blank")} }, { label: 'NIFF' }]
+                        items: [{ label: 'NIC - NIFF', command:()=>{window.open("https://drive.google.com/file/d/1VPSOnXxesWoSJ4YpcEYMAwtAlQpraIOK/view?usp=sharing", "_blank")} }]
                     }
                 ]
             ]
@@ -96,8 +96,8 @@ export default function Menu() {
             items: [
                 [
                     {
-                        label: 'S1',
-                        items: [{ label: 'Libro diario', command:()=>{window.open("https://docs.google.com/spreadsheets/d/13LIYbWFppjkyz6tvYtFIwwMdOTMJ1eIj/edit?usp=sharing&ouid=110999749554107028790&rtpof=true&sd=true", "_blank")} }, { label: 'Mayorizacion' }, { label: 'Balance' }]
+                        label: 'S5',
+                        items: [{ label: 'Libro diario', command:()=>{window.open("https://docs.google.com/spreadsheets/d/1Wt004E-gnASNmaDTZLIPeBIe0H_CCbG5/edit?usp=sharing&ouid=110999749554107028790&rtpof=true&sd=true", "_blank")} }, { label: 'Mayorizacion', command:()=>{window.open("https://docs.google.com/spreadsheets/d/1cywkmENXM5vYGJmfsE0xOj_Njt3zBDRh/edit?usp=sharing&ouid=110999749554107028790&rtpof=true&sd=true", "_blank")} }, { label: 'Balance' , command:()=>{window.open("https://docs.google.com/spreadsheets/d/1COU-MCAUqnmWZGwUB85AOovwp1AchGEu/edit?usp=sharing&ouid=110999749554107028790&rtpof=true&sd=true", "_blank")} }]
                     }
                 ]
             ]
@@ -108,8 +108,8 @@ export default function Menu() {
             items: [
                 [
                     {
-                        label: 'S1',
-                        items: [{ label: 'ESF' }, { label: 'E. Resultados', command:()=>{window.open("https://docs.google.com/spreadsheets/d/1_tQRN4iriROrvx84Qd4WVHbki3NlDcqW/edit?usp=sharing&ouid=110999749554107028790&rtpof=true&sd=true", "_blank")} }, { label: 'E. Flujos de Efectivo' }, {label: 'E. Cambios en el patrimonio'}]
+                        label: 'S6',
+                        items: [{ label: 'ESF' , command:()=>{window.open("https://docs.google.com/spreadsheets/d/1w3nWfRHr0mLl4_YnV387lMef0FuQVbr1/edit?usp=sharing&ouid=110999749554107028790&rtpof=true&sd=true", "_blank")} }, { label: 'E. Resultados', command:()=>{window.open("https://docs.google.com/spreadsheets/d/13NT9TgiTZK8D-BVQMlRA7jmFbL3KgYQY/edit?usp=sharing&ouid=110999749554107028790&rtpof=true&sd=true", "_blank")} }, { label: 'E. Flujos de Efectivo', command:()=>{window.open("https://docs.google.com/spreadsheets/d/17fLOQlHjKiiM6naNl9VVEWprZlswUZwU/edit?usp=sharing&ouid=110999749554107028790&rtpof=true&sd=true", "_blank")} }, {label: 'E. Cambios en el patrimonio', command:()=>{window.open("https://docs.google.com/spreadsheets/d/1zkl60yVrFUBjU4V4xTiNrqJJ__MRCA38/edit?usp=sharing&ouid=110999749554107028790&rtpof=true&sd=true", "_blank")}}]
                     }
                 ]
             ]
@@ -127,7 +127,7 @@ export default function Menu() {
                 [
                     {
                         label: 'Evaluaciones S8',
-                        items: [{ label: 'Pruebas', command:()=>{window.open("https://docs.google.com/document/d/1q9BcIQ5-d5_LnkBbPwCV9yL9nx9yEg3U/edit?usp=sharing&ouid=110999749554107028790&rtpof=true&sd=true", "_blank")} }, { label: 'Lecciones' }, { label: 'Mecanismos para reforzar' }]
+                        items: [{ label: 'Pruebas, Lecciones, Mecanismos para reforzar', command:()=>{window.open("https://docs.google.com/document/d/1q9BcIQ5-d5_LnkBbPwCV9yL9nx9yEg3U/edit?usp=sharing&ouid=110999749554107028790&rtpof=true&sd=true", "_blank")} }]
                     }
                 ]
             ]
@@ -137,8 +137,8 @@ export default function Menu() {
         <div>
             <Link href="/">
             <Avatar
-                image="https://res.cloudinary.com/dqtu46lne/image/upload/v1706061073/proyect_contability/rjunpc2ge23nmxth55xo.png"
-                shape="circle" size="xlarge"/>
+                image="https://res.cloudinary.com/dqtu46lne/image/upload/v1706242497/proyect_contability/bssq1lr1cs4flhlyxpv3.jpg"
+                shape="square" size="xlarge"/>
             </Link>
         </div>
     );
@@ -149,7 +149,7 @@ export default function Menu() {
         <div className="card">
             {/*<MegaMenu model={items} orientation="horizontal" start={start} end={end} breakpoint="960px"*/}
             {/*          className="p-3" style={{borderRadius: '0rem'}}/>*/}
-            <MegaMenu start={start} model={itemsMenu} breakpoint="960px" />
+            <MegaMenu style={{backgroundColor:"rgb(247, 225, 202)"}} start={start} model={itemsMenu} breakpoint="960px" />
         </div>
     )
 }

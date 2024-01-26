@@ -40,7 +40,7 @@ const IndexPage = () => (
             <Card style={cardStyle}>
                 <Card style={overlayCardStyle}>
                     <div className="block text-center align-items-center  border-round mb-3">
-                        <Image className="align-content-center" src={"https://res.cloudinary.com/dqtu46lne/image/upload/v1706061073/proyect_contability/rjunpc2ge23nmxth55xo.png"} width="200px"></Image>
+                        <Image className="align-content-center" src={"https://res.cloudinary.com/dqtu46lne/image/upload/v1706242497/proyect_contability/bssq1lr1cs4flhlyxpv3.jpg"} width="200px"></Image>
                     </div>
                     <div className="row align-items-center p-inputtext-sm">
                         <div className="row align-items-center p-inputtext-sm">

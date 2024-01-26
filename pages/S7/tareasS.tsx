@@ -3,6 +3,7 @@ import Menu from "../../components/menu";
 import {Footer} from "../../components/footer";
 import {Card} from "primereact/card";
 import {TabPanel, TabView} from "primereact/tabview";
+import {Image} from "primereact/image";
 
 
 export const tareasS = () => {
@@ -22,10 +23,6 @@ export const tareasS = () => {
             <TabView style={{backgroundColor: "black"}}>
                 <TabPanel header="Contabilidad Básica">
                     <h2>Información Empresarial</h2>
-                    <p>Fecha: 01 de diciembre de 2010</p>
-                    <p>Propietario: Arturo León</p>
-
-                    <h3>Operaciones:</h3>
                     <ul>
                         <li>01 de diciembre: Arturo León propietario de Almacenes “Mi Almacén” Ltda., reinicia
                             actividades correspondientes al presente mes. Para tal efecto, se cuenta con la siguiente
@@ -120,11 +117,133 @@ export const tareasS = () => {
                         </li>
                     </ul>
                 </TabPanel>
-                <TabPanel header="Contabilidad de Costos"></TabPanel>
-                <TabPanel header="Contabilidad Agropecuaria"></TabPanel>
-                <TabPanel header="Contabilidad Bancaria"></TabPanel>
-                <TabPanel header="Tributación"></TabPanel>
-                <TabPanel header="Laboral"></TabPanel>
+                <TabPanel header="Contabilidad de Costos">
+                    <p>La compañía industrial de pinturas “Mi Pintura” S.A. cuenta con los siguientes departamentos;
+                        cada uno de ellos es considerado como un área de responsabilidad:</p>
+                    <h2>Departamento de Producción:</h2>
+                    <ul>
+                        <li>Mezclado</li>
+                        <li>Filtrado</li>
+                        <li>Condensado</li>
+                        <li>Envasado</li>
+                    </ul>
+                    <h2>Servicios:</h2>
+                    <ul>
+                        <li>Control de calidad</li>
+                        <li>Mantenimiento</li>
+                    </ul>
+                    <p>Considerando la siguiente información efectúe el prorrateo primario y secundario de los gastos de
+                        fabricación. Los costos presupuestados de las diferentes partidas que son utilizadas por
+                        diferentes departamentos de servicios y de línea son:</p>
+                    <Image
+                        src="https://res.cloudinary.com/dqtu46lne/image/upload/v1706239903/proyect_contability/bbukear4wnwno1hmqmgf.jpg"></Image>
+                    <p>Las instalaciones de la compañía ocupan un área de 7.000 metros cuadrados.
+                        Información sobre las bases a utilizar para prorrateo primario.
+                    </p>
+                    <Image
+                        src="https://res.cloudinary.com/dqtu46lne/image/upload/v1706239903/proyect_contability/b2vqnijxt2ahvfojexfn.jpg"></Image>
+                    <p>Información respecto a las bases para efectuar el prorrateo secundario:</p>
+                    <Image
+                        src="https://res.cloudinary.com/dqtu46lne/image/upload/v1706239904/proyect_contability/k8iezupnzrg1ac1dwycz.jpg"></Image>
+                    <h3>Se pide:</h3>
+                    <p>distribuir los gastos indirectos de fabricación.</p>
+
+
+                </TabPanel>
+                <TabPanel header="Contabilidad Agropecuaria">
+                    <p>La empresa "EL PANTANAL", dedicada a la explotación de cría y recría, inicia sus actividades el 1
+                        de julio de 2001, con los siguientes aportes:</p>
+                    <Image src="https://res.cloudinary.com/dqtu46lne/image/upload/v1706239903/proyect_contability/ewh7ehsh2l00olxtssij.jpg"></Image>
+                    <p>El Hato de ganado vacuno al inicio de actividades está clasificado de la siguiente manera:</p>
+                    <Image src="https://res.cloudinary.com/dqtu46lne/image/upload/v1706239903/proyect_contability/esve0claglfrtrytzzie.jpg"/>
+                    <Image src="https://res.cloudinary.com/dqtu46lne/image/upload/v1706239903/proyect_contability/woilzipe3ypqqslttpal.jpg"/>
+                    <p>Durante la presente gestión se efectuaron las siguientes transacciones:</p>
+                    <ol>
+                        <li>La compra de 2.000 dosis de reconstituyentes (INYACOM) a $. 45,00 por dosis, como la
+                            adquisición de 4.000 dosis de vacuna contra la aftosa a $. 6,50 por dosis, de la Veterinaria
+                            "SAN ROQUE", cancelados con fondos de compras y el saldo por caja.
+                        </li>
+                        <li> Para la reparación de las viviendas de los peones vaqueros, se contrata personal eventual,
+                            a quienes se les cancela mediante caja la suma de $. 1.200,oo por el trabajo ejecutado.
+                        </li>
+                        <li>La planilla de mortandad presentada por el administrador registra las siguientes bajas por
+                            diferentes causas:
+                        </li>
+                        <ul>
+                            <li>2 terneros machos</li>
+                            <li>5 terneros hembras</li>
+                            <li>5 novillos de 1 año</li>
+                            <li>2 novillos de 3 años</li>
+                        </ul>
+                        <li>Durante la presente gestión se sacrificaron 4 novillos de 3 años, para alimentación del
+                            personal de planta.
+                        </li>
+                        <li>La planilla de sueldos y salarios, previa retención para la Federación de campesinos
+                            asciende a $. 24.000,00, cancelados mediante caja.
+                        </li>
+                        <li>Se concreta la venta de ganado de acuerdo a los siguientes términos:</li>
+                        <ul>
+                            <li> 25 cabezas de 3 años promedio por cabeza 398 Kg.</li>
+                            <li>Precio por kilo puesto estancia $. 5,20</li>
+                            <li>Se le reconoce la merma del 2%</li>
+                            <li>Por trabajo del faeneo recupera la suma de $. 60,00 por cabeza.</li>
+                        </ul>
+                        <li>Tomando en cuenta las transacciones anteriores se realiza la vacunación de todo el ganado
+                            vacuno como del caballar contra la fiebre aftosa.
+                        </li>
+                        <li>En la presente gestión se compraron alimentos suplementarios de la empresa "EL PAURO" por un
+                            monto de $. 25.000,00, utilizados en su totalidad únicamente en reproductores machos y
+                            hembras, de la misma manera se aplicaron reconstituyentes.
+                        </li>
+                        <li>La parición en este período alcanza a un 58%</li>
+                        <li>Con los ajustes correspondientes elaborar un Balance General y Estado de Resultados por la
+                            presente gestión
+                        </li>
+                    </ol>
+                </TabPanel>
+                <TabPanel header="Contabilidad Bancaria">
+                    <p>El Banco de la Unión registra las siguientes operaciones en la sección caja:</p>
+                    <ol>
+                        <li>Recibe depósitos en efectivo para depósitos en caja de ahorros $ 3000.</li>
+                        <li>Recibe depósitos en efectivo para cuentas comentes $ 5000.</li>
+                        <li>Recibe depósitos en efectivo para depósitos a plazo fijo$ 2000.</li>
+                        <li>Recibe depósitos en efectivo para giros al interior $ 3000.</li>
+                        <li>Recibe depósitos de cheques propios para abono en Cta. Cte. $ 5000.</li>
+                        <li>Recibe depósitos de cheques propios para abono en caja de ahorro $ 2000.</li>
+                        <li>Cancela el cajero su falla del día anterior$ 400.</li>
+                        <li>Efectúa un pase a Caja 2 por $ 3000.</li>
+                        <p>Nota: No registra pase de bóveda</p>
+                    </ol>
+                </TabPanel>
+                <TabPanel header="Tributación">
+                    <ol>
+                        <li>Impuesto a la Renta personas naturales</li>
+                        <p>El Señor Miguel Ángel Pérez Jaramillo con RUC 091229547001 durante el ejercicio económico 2010, ha tenido las siguientes actividades:</p>
+
+                        <ol>
+                            <li>El Sr. trabaja en la empresa EXAMEN S.A. bajo relación de dependencia, el recibió por concepto de sueldo en el año US $70.000. Adicionalmente recibió US $7.000 por concepto de utilidades del ejercicio 2009. La empresa reconoce de manera legal el décimo tercer y décimo cuarto sueldo que es de $6.000 y $264 respectivamente. Al terminar el año no declaró gastos personales.</li>
+                            <li>Por asesoría y capacitaciones en libre ejercicio profesional de acuerdo a su profesión, obtuvo ingresos durante el año de US $8.000.  Estos servicios fueron prestados el 60% a sociedades. Adicionalmente sus gastos relacionados con el ejercicio profesional sustentados con comprobantes de venta autorizados por el SRI suman US $ 2.500.</li>
+                            <li>El 1 de Julio del 2010, invirtió $60.000 en una póliza de inversión la mantuvo hasta fin de año en el “Banco Interamericano”, y le generó un interés de 4% anual.</li>
+                            <li>Tiene en el Centro Comercial “San Marino”, un local de venta de ropa importada que ha generado US $ 70.000 de ingresos y US $40.000 de gastos que se encuentran sustentados en comprobantes de venta válidos.  Las ventas realizadas fueron un 30% a sociedades.</li>
+                            <li>Es propietario de un bien inmueble, avaluado en US $ 165.000 y le arrienda al señor Gustavo Peralta su departamento en Salinas a $1.500 desde Enero del 2010 hasta Noviembre del 2010.  El señor Peralta es gerente de la compañía Finanzas S.A. y el pago del arriendo lo hace dicha compañía. Gasto el Sr. Perez en el año US$ 900 para el mantenimiento del bien inmueble. Por otro lado, cancela $600 por concepto de impuesto predial.</li>
+                            <li>El anticipo de impuesto a la renta pagado el año anterior fue de US $ 4.000</li>
+                        </ol>
+                        <ul>
+                            <h3>Se pide:</h3>
+                            <li>Calcular las retenciones en la fuente que le fueron realizadas.</li>
+                            <li>Liquidar el impuesto a la renta del contribuyente.</li>
+                        <li>Considerar que la declaración se realiza dentro del plazo respectivo.</li>
+                        </ul>
+                    </ol>
+                </TabPanel>
+                <TabPanel header="Laboral">
+                    <p>Realice el cálculo de la jubilación patronal de:</p>
+                    <ul>
+                        <li>Empleado: Mujer de 65 años</li>
+                        <li>Tiempo de trabajo:22 años</li>
+                        <li>Sueldo mensual: $564</li>
+                    </ul>
+                </TabPanel>
             </TabView>
         </Card>
         <Footer></Footer>
